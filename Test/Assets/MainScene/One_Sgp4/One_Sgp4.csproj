@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Reed</Authors>
+    <Company>1 Man Projects</Company>
+    <Description>This library calculates the orbits of satellites via TLEs data from the web. Other functions for coordination transformation, time calculations and the calculation of contact windows depending on the observers coordinates on earth are also available.</Description>
+    <Copyright>The MIT License (MIT)</Copyright>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/1manprojects/one_Sgp4</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/1manprojects/one_Sgp4</RepositoryUrl>
+    <PackageTags>SGP4 Orbit Prediction Satellite</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>false</Optimize>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;netstandard2.0;net40;net45</TargetFrameworks>
+    <Version>1.0.13</Version>
+    <PackageReleaseNotes>Fixed Parse error wen Parsing TLE data with DragTerm of 0000+0 format</PackageReleaseNotes>
+    <AssemblyVersion>1.0.13.0</AssemblyVersion>
+    <PackageLicenseExpression />
+    <PackageLicenseFile>license.txt</PackageLicenseFile>
+    <FileVersion>1.0.13.0</FileVersion>
+    <Product>One_Sgp4</Product>
+    <PackageId>One_Sgp4</PackageId>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Include="..\license.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
